@@ -48,7 +48,7 @@ const arr2 = ['P', 'Q', 'R']
 // console.log(arr1[4][0]);
 
 const arr3 = arr1.concat(arr2)
-// console.log(arr3);
+console.log(arr3);
 
 const arr4 = [...arr1, ...arr2, ...myArr2]
 // console.log(arr4);
@@ -70,3 +70,13 @@ let score2 = 200
 let score3 = 300 
 
 console.log(Array.of(score1, score2, score3));
+
+// array find and search methods
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Mango");
+let position1 = fruits.lastIndexOf("Apple");
+// returns the position of the last occurrence of the specified element.
+
+console.log(position1);
+console.log(fruits.includes("Mango"));
