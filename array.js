@@ -76,7 +76,11 @@ console.log(Array.of(score1, score2, score3));
 const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.indexOf("Mango");
 let position1 = fruits.lastIndexOf("Apple");
+
 // returns the position of the last occurrence of the specified element.
 
 console.log(position1);
 console.log(fruits.includes("Mango"));
+
+const arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+console.log(arr.copyWithin(-3, 0))
