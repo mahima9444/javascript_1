@@ -3,22 +3,22 @@
 
 const array1 = ["P", "Q", "R", "ST"];
 
-// array1.forEach( function (val) {
-//     console.log(val);
-// } )
+array1.forEach( function (val) {
+    // console.log(val);
+} )
 
 // array1.forEach( (val) => {
 //     console.log(val);
 // } )
 
-// function printMe(val) {
-//     console.log(val);
-// }
+function printMe(val) {
+    console.log(val);
+}
 
-// array1.forEach(printMe)
+array1.forEach(printMe)
 
 array1.forEach((val, index, array1) => {
-//   console.log(val, index, array1);
+  console.log(val, index, array1);
 });
 
 const myArray = [
@@ -83,4 +83,4 @@ myNum.forEach( (num) => {
   }
 })
 
-console.log(newNum);
+// console.log(newNum);

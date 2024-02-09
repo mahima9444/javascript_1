@@ -9,9 +9,18 @@ for (const val of arr) {
 let string1 = "hello world"
 
 for (const str of string1) {
-    if(str == " "){
-        break;
-    }
+    // if(str == " "){
+    //     break;
+    // }
+    // console.log(`each characte of string: ${str}`);
+}
+
+let string2 = "abcd"
+
+for (const str in string2) {
+    // if(str == " "){
+    //     break;
+    // }
     // console.log(`each characte of string: ${str}`);
 }
 
@@ -40,6 +49,8 @@ const myObject = {
     cpp: "C++"
 }
 
+// Object is not iterable
+
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
 // }
@@ -52,12 +63,12 @@ for (const key in myObject) {
 
 const array1 = ["A", "B", "C", "D"]
 
-for (const [key, value] in array1) {
-    // console.log(key);
+for (const [key, value] of array1) {
+    console.log(key);
     //    console.log(key, ':-', value);
     // console.log(array1[key]);
 }
 
-for (const key in  map) {
+for (const key in map) {
 //    console.log(key);
 }
