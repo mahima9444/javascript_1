@@ -16,7 +16,7 @@ const myArr2 = [11, 12, 13, 14, 15]
 // myArr.unshift(11)
 myArr.shift()
 
-console.log(myArr);
+// console.log(myArr);
 
 // console.log(myArr.includes(8));
 // console.log(myArr2.indexOf(14));
@@ -48,7 +48,7 @@ const arr2 = ['P', 'Q', 'R']
 // console.log(arr1[4][0]);
 
 const arr3 = arr1.concat(arr2)
-console.log(arr3);
+// console.log(arr3);
 
 const arr4 = [...arr1, ...arr2, ...myArr2]
 // console.log(arr4);
@@ -57,19 +57,19 @@ const arr5 = [1, 2, 3, [4, 5, 6], 7, [11, 12, [13, 14]]]
 const arr7 = [1, 2, 3, [4, 5, [110], 6], 7, [11, 12, [13, 14]]]
 
 const arr6 = arr5.flat(1)
-console.log(arr6);
+// console.log(arr6);
 
 // console.log(Array.isArray("tanu"));
 // console.log(Array.from("tanu"));
 
 // interesting
-console.log(Array.from({name: "tanu"}));
+// console.log(Array.from({name: "tanu"}));
     
 let score1 = 100 
 let score2 = 200 
 let score3 = 300 
 
-console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3));
 
 // array find and search methods
 
@@ -79,8 +79,37 @@ let position1 = fruits.lastIndexOf("Apple");
 
 // returns the position of the last occurrence of the specified element.
 
-console.log(position1);
-console.log(fruits.includes("Mango"));
+// console.log(position1);
+// console.log(fruits.includes("Mango"));
 
 const arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
-console.log(arr.copyWithin(-3, 0))
+// console.log(arr.copyWithin(-3, 0))
+
+// every()
+
+// The every() method checks if all the array elements pass the given test function.
+
+const ageArray = [3, 5, 5, 2, 3, 9, 18]
+
+function checkAge(age){
+    return age>= 18;
+}
+
+let check = ageArray.every(checkAge)
+
+// The some() method tests whether any of the array elements pass the given test function.
+
+
+// let check = ageArray.some(checkAge)
+
+
+// console.log(check);
+
+let languages = ["JavaScript", "Java", "Python"];
+
+// let constructor = languages.constructor;
+
+let iterator = languages.entries();
+for (let entry of iterator) {
+  console.log(entry);
+}
